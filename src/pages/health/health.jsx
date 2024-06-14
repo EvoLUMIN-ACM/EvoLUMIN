@@ -1,18 +1,73 @@
-import ButtonGradient from "../../assets/svg/ButtonGradient";
+// src/pages/health/Health.jsx
+import { useState } from "react";
+import Section from "../../components/Section";
+import Heading from "../../components/Heading";
+
+const domainData = [
+  {
+    title: "Domain: AI",
+    brief: "Develop an AI system for proactive healthcare that...",
+    fullDescription: "Develop an AI system for proactive healthcare that analyzes real-time vitals, detects anomalies, predicts risks, triggers automated responses, and generates personalized health reports with visualizations. Focus on user-friendly interfaces and clear action plans for early intervention."
+  },
+  {
+    title: "Domain: Cyber Security",
+    brief: "Implement an authentication and encrypted mechanism that...",
+    fullDescription: "Implement an authentication and encrypted mechanism that ensures only the authorized can communicate with implantable medical devices like pacemakers, defibrillators, and insulin pumps, preventing unauthorized access and potential malicious activities. Develop an emergency access and override system for critical situations."
+  },
+  {
+    title: "Domain: Gamification",
+    brief: "Create innovative gamified solutions for autistic individuals to...",
+    fullDescription: "Create innovative gamified solutions for autistic individuals to enhance attention maintenance skills, promote facial expression recognition, foster perspective-taking abilities, and facilitate social communication."
+  },
+  {
+    title: "Domain: IOT (Internet of Things)",
+    brief: "Develop an automatic garbage alerting system to...",
+    fullDescription: "Develop an automatic garbage alerting system to address plastic pollution. Suggest a tracking system with an integrated mechanism for sorting plastic trash and alerting households producing more plastic waste."
+  },
+  {
+    title: "Domain: Application Development",
+    brief: "Develop an app that supports independent living among...",
+    fullDescription: "Develop an app that supports independent living among the elderly, with features like fall detection, medication reminders, virtual companionship, and access to emergency assistance."
+  },
+  {
+    title: "Domain: Web Development",
+    brief: "Develop a website to bridge communication gaps regarding...",
+    fullDescription: "Develop a website to bridge communication gaps regarding healthcare needs within university hostels. Include features like ambulance availability, patient information sharing, isolation notifications, and a pharmacy connection for medicine delivery. Design user-friendly interfaces accommodating users with visual, auditory, and cognitive impairments, and a system for real-time monitoring of implantable devices for suspicious activity."
+  }
+];
 
 const Health = () => {
-  return (
-    <>
-      <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
-        <h1 className="h1-title mb-6">
-            <span className="inline-block relative">
-                Health Care.. engane chaiyanam...
-            </span>
-        </h1>
-      </div>
+  const [hoveredIndex, setHoveredIndex] = useState(null);
 
-      <ButtonGradient />
-    </>
+  return (
+    <Section className="pt-24 -mt-20" crosses crossesOffset="lg:-translate-y-20" customPaddings id="healthcare">
+      <div className="container relative">
+        <Heading tag="Explore Healthcare Innovations" title="Health Care Innovations" className="text-5xl font-semibold text-n-1 mb-12 lg:text-8xl lg:mb-16" />
+        <div className="text-center mb-15">The aim should be to focus on building an innovative solution addressing the challenges faced in the healthcare field and is effective, user friendly, and is easily accessible to all the people. Participants can make use of one single domain or a combination of many domains to achieve this goal. </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          {domainData.map((domain, index) => (
+            <div
+              key={index}
+              className="bg-blue-800 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 relative overflow-hidden"
+              onMouseEnter={() => setHoveredIndex(index)}
+              onMouseLeave={() => setHoveredIndex(null)}
+            >
+              <h2 className="text-2xl font-semibold mb-4 text-blue-300">
+                {domain.title}
+              </h2>
+              <p className="mb-4 text-white">
+                {domain.brief}
+              </p>
+              <div className={`absolute inset-0 bg-blue-800 p-6 transition-opacity duration-300 ${hoveredIndex === index ? 'opacity-100' : 'opacity-0'}`}>
+                <p className="text-white">
+                  {domain.fullDescription}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </Section>
   );
 };
 
