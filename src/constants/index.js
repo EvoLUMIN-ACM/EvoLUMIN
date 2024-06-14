@@ -2,8 +2,9 @@ import {
   benefitIcon1,
   benefitIcon2,
   benefitIcon3,
-  benefitIcon4,
-  benefitImage2,
+  medical,
+  plant,
+  sdg,
   chromecast,
   disc02,
   discord,
@@ -248,7 +249,8 @@ export const benefits = [
     text: "The aim is to empower farmers with innovative digital solutions that leverage IoT, Al, and ML to address their agriculture challenges.",
     backgroundUrl: "./src/assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
-    imageUrl: benefitImage2,
+    imageUrl: plant,
+    light: true,
   },
   {
     id: "1",
@@ -256,7 +258,7 @@ export const benefits = [
     text: "The aim should be to focus on building an innovative solution addressing the challenges faced in the healthcare field that is effective, user-friendly, and is easily accessible to all people.",
     backgroundUrl: "./src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
-    imageUrl: benefitImage2,
+    imageUrl: medical,
     light: true,
   },
   {
@@ -265,7 +267,7 @@ export const benefits = [
     text: "The aim should be to focus on building an innovative solution addressing the challenges faced in achieving the Sustainable Development Goals (SDGs) by 2030.",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
-    imageUrl: benefitImage2,
+    imageUrl: sdg,
   }
 ];
 
