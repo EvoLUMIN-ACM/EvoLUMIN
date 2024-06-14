@@ -1,6 +1,6 @@
 import ButtonGradient from "../assets/svg/ButtonGradient";
 import Tracks from "../components/Tracks.jsx";
-import Collaboration from "../components/Collaboration";
+import Timeline from "../components/Timeline";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
@@ -16,7 +16,7 @@ const App = () => {
         <Header />
         <Hero />
         <Tracks />
-        <Collaboration />
+        <Timeline />
         <Sdg />
         <Services />
         <Pricing />

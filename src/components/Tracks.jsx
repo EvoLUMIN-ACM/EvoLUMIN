@@ -9,6 +9,7 @@ const Tracks = () => {
   return (
     <Section id="tracks">
       <div className="container relative z-2">
+        <br />
         <Heading
           className="md:max-w-md lg:max-w-2xl"
           title="Tracks"
