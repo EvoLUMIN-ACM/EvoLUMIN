@@ -1,6 +1,6 @@
 import ButtonGradient from "../assets/svg/ButtonGradient";
 import Tracks from "../components/Tracks.jsx";
-import Timeline from "../components/Timeline";
+import TimeLine from "../components/timeline/Timeline";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
@@ -8,6 +8,7 @@ import Pricing from "../components/Pricing";
 import Roadmap from "../components/Roadmap";
 import Services from "../components/Services";
 import Sdg from "./sdg/sdg.jsx";
+import Health from "./health/health.jsx";
 
 const App = () => {
   return (
@@ -16,8 +17,9 @@ const App = () => {
         <Header />
         <Hero />
         <Tracks />
-        <Timeline />
+        <TimeLine />
         <Sdg />
+        <Health/>
         <Services />
         <Pricing />
         <Roadmap />
