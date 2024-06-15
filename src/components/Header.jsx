@@ -1,6 +1,5 @@
 import { useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
-
 import evolumin from "../assets/evolumin.png";
 import { navigation } from "../constants";
 import Button from "./Button";

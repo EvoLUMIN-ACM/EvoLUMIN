@@ -2,6 +2,12 @@
 import React, { useEffect } from 'react';
 import Image from "next/image";
 import AOS from 'aos';
+import NO1 from "../assets/No 1.png";
+import NO2 from "../assets/No 2.png";
+import NO3 from "../assets/No 3.png";
+import NO4 from "../assets/No 4.png";
+import NO5 from "../assets/No 5.png";
+import NO6 from "../assets/No 6.png";
 import 'aos/dist/aos.css';
 
 const Timeflow = () => {
@@ -24,7 +30,7 @@ const Timeflow = () => {
         {/* One */}
         <div className="custom-container custom-left-container">
           <Image
-            src="/No 1.png"
+            src={NO1}
             alt="logo"
             width={53}
             height={53}
@@ -47,7 +53,7 @@ const Timeflow = () => {
         {/* Two */}
         <div className="custom-container custom-right-container mt-[50px]">
           <Image
-            src="/No 2.png"
+            src={NO2}
             alt="logo"
             width={53}
             height={53}
@@ -70,7 +76,7 @@ const Timeflow = () => {
         {/* Three */}
         <div className="custom-container custom-left-container mt-[60px]">
           <Image
-            src="/No 3.png"
+            src={NO3}
             alt="logo"
             width={53}
             height={53}
@@ -93,7 +99,7 @@ const Timeflow = () => {
         {/* Four */}
         <div className="custom-container custom-right-container mt-[50px]">
           <Image
-            src="/No 4.png"
+            src={NO4}
             alt="logo"
             width={53}
             height={53}
@@ -116,7 +122,7 @@ const Timeflow = () => {
         {/* Five */}
         <div className="custom-container custom-left-container mt-[60px]">
           <Image
-            src="/No 5.png"
+            src={NO5}
             alt="logo"
             width={53}
             height={53}
@@ -139,7 +145,7 @@ const Timeflow = () => {
         {/* Six */}
         <div className="custom-container custom-right-container mt-[50px]">
         <Image
-            src="/No 6.png"
+            src={NO6}
             alt="logo"
             width={53}
             height={53}
