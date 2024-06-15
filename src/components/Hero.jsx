@@ -34,7 +34,9 @@ const Hero = () => {
             </span>
           </h1>
           <p className="body-1-title max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
-            Innovate Now, Illuminate Tomorrow
+            Innovate Now.
+            <br />
+            Illuminate Tomorrow...
           </p>
           <Button href="/pricing" white>
             Join us

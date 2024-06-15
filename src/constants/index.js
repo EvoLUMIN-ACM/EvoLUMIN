@@ -257,6 +257,7 @@ export const benefits = [
     iconUrl: benefitIcon1,
     imageUrl: plant,
     light: true,
+    url: "/#tracks",
   },
   {
     id: "1",
@@ -266,6 +267,7 @@ export const benefits = [
     iconUrl: benefitIcon2,
     imageUrl: medical,
     light: true,
+    url: "/#tracks",
   },
   {
     id: "2",
@@ -274,6 +276,8 @@ export const benefits = [
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: sdg,
+    light: true,
+    url: "/#tracks",
   }
 ];
 
