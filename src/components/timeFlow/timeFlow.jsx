@@ -1,6 +1,6 @@
 import './timeFlow.css';
 
-const Timeflow1 = () => {
+const Timeflow = () => {
   return (
     <div className="max-w-5xl mx-auto my-12 px-5 relative">
       <div className="absolute h-full w-1 bg-white left-1/2 transform -translate-x-1/2 top-5">
@@ -100,4 +100,4 @@ const Timeflow1 = () => {
   );
 }
 
-export default Timeflow1;
+export default Timeflow;

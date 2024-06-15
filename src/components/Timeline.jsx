@@ -2,7 +2,7 @@ import {check } from "../assets";
 import { collabContent} from "../constants";
 import Button from "./Button";
 import Section from "./Section";
-import Timeflow from "./timeFlow";
+import Timeflow from "./timeFlow/timeFlow";
 
 const Timeline = () => {
   return (
