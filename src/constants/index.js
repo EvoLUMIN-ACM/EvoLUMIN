@@ -35,6 +35,7 @@ import {
   telegram,
   twitter,
   yourlogo,
+  bluewhite
 } from "../assets";
 
 export const navigation = [

@@ -2,7 +2,6 @@ import { curve, heroBackground, robot } from "../assets";
 import Button from "./Button";
 import Section from "./Section";
 import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
-import { heroIcons } from "../constants";
 import { ScrollParallax } from "react-just-parallax";
 import { useRef } from "react";
 import Notification from "./Notification";
@@ -23,7 +22,7 @@ const Hero = () => {
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
           <h1 className="h1-title mb-7">
             <span className="inline-block relative">
-            EvoLUMIN {` `}
+              EvoLUMIN {` `}
               <img
                 src={curve}
                 className="absolute top-full left-0 w-full xl:mt-2"
@@ -57,19 +56,20 @@ const Hero = () => {
                 />
 
                 <ScrollParallax isAbsolutelyPositioned>
-                  <ul className="hidden absolute -left-[5.5rem] bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl xl:flex">
-                    {heroIcons.map((icon, index) => (
-                      <li className="p-5" key={index}>
-                        <img src={icon} width={24} height={25} alt={icon} />
-                      </li>
-                    ))}
-                  </ul>
+                  <Notification
+                    className="hidden absolute -left-[5.5rem] bottom-[7.5rem] w-[18rem] xl:flex"
+                    title="Amrita Vishwa"
+                    text="Vidyapeetham"
+                    logo="amrita"
+                  />
                 </ScrollParallax>
 
                 <ScrollParallax isAbsolutelyPositioned>
                   <Notification
-                    className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex"
-                    title="Code generation"
+                    className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[16rem] xl:flex"
+                    title="ACM Chapter"
+                    text="Amritapuri"
+                    logo="acm"
                   />
                 </ScrollParallax>
               </div>

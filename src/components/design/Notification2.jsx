@@ -1,6 +1,7 @@
-import { bluewhite } from "../assets";
+import { bluewhite } from "../../assets";
+import { notificationImages } from "../../constants";
 
-const Notification = ({ className, title, text }) => {
+const Notification2 = ({ className, title, text }) => {
   return (
     <div
       className={`${
@@ -24,4 +25,4 @@ const Notification = ({ className, title, text }) => {
   
 };
 
-export default Notification;
+export default Notification2;
