@@ -6,7 +6,7 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Pricing from "../components/Pricing";
 import Roadmap from "../components/Roadmap";
-import Services from "../components/Services";
+import About from "../components/About";
 import Sdg from "./sdg/sdg.jsx";
 import Health from "./health/health.jsx";
 
@@ -16,11 +16,11 @@ const App = () => {
       <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
         <Header />
         <Hero />
-        <Tracks />
+        <About />
         <Timeline />
+        <Tracks />
         <Sdg />
         <Health/>
-        <Services />
         <Pricing />
         <Roadmap />
         <Footer />

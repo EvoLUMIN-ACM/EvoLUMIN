@@ -40,8 +40,8 @@ import {
 export const navigation = [
   {
     id: "0",
-    title: "Tracks",
-    url: "/#tracks",
+    title: "About",
+    url: "/#about",
   },
   {
     id: "1",
@@ -56,8 +56,8 @@ export const navigation = [
   
   {
     id: "3",
-    title: "How to use",
-    url: "/#how-to-use",
+    title: "Tracks",
+    url: "/#tracks",
   },
   {
     id: "4",

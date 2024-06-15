@@ -1,9 +1,15 @@
-import { benefits } from "../constants";
+
 import Heading from "./Heading";
 import Section from "./Section";
-import Arrow from "../assets/svg/Arrow";
-import { GradientLight } from "./design/Benefits";
-import ClipPath from "../assets/svg/ClipPath";
+import { service2, service3 } from "../assets";
+import { brainwaveServicesIcons } from "../constants";
+import {
+  PhotoChatMessage,
+  Gradient,
+  VideoBar,
+  VideoChatMessage,
+} from "./design/Services";
+
 
 const Tracks = () => {
   return (
@@ -15,55 +21,76 @@ const Tracks = () => {
           title="Tracks"
         />
 
-        <div className="flex flex-wrap gap-10 mb-10">
-          {benefits.map((item) => (
-            <div
-              className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
-              style={{
-                backgroundImage: `url(${item.backgroundUrl})`,
-              }}
-              key={item.id}
-            >
-              <div className="relative z-2 flex flex-col min-h-[22rem] p-[2.4rem] pointer-events-none">
-                <h5 className="h5 mb-5">{item.title}</h5>
-                <p className="body-2 mb-6 text-n-3">{item.text}</p>
-                <div className="flex items-center mt-auto">
-                  <img
-                    src={item.iconUrl}
-                    width={48}
-                    height={48}
-                    alt={item.title}
-                  />
-                  <p className="ml-auto font-code text-xs font-bold text-n-1 uppercase tracking-wider">
-                    Explore more
-                  </p>
-                  <Arrow />
-                </div>
-              </div>
-
-              {item.light && <GradientLight />}
-
-              <div
-                className="absolute inset-0.5 bg-n-8"
-                style={{ clipPath: "url(#benefits)" }}
-              >
-                <div className="absolute inset-0 opacity-0 transition-opacity hover:opacity-10">
-                  {item.imageUrl && (
-                    <img
-                      src={item.imageUrl}
-                      width={380}
-                      height={362}
-                      alt={item.title}
-                      className="w-full h-full object-cover"
-                    />
-                  )}
-                </div>
-              </div>
-
-              <ClipPath />
+        <div className="relative z-1 grid gap-5 lg:grid-cols-2">
+          <div className="relative min-h-[39rem] border border-n-1/10 rounded-3xl overflow-hidden">
+            <div className="absolute inset-0">
+              <img
+                src={service2}
+                className="h-full w-full object-cover"
+                width={630}
+                height={750}
+                alt="robot"
+              />
             </div>
-          ))}
+
+            <div className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 lg:p-15">
+              <h4 className="h4 mb-4">Photo editing</h4>
+              <p className="body-2 mb-[3rem] text-n-3">
+                Automatically enhance your photos using our AI app&apos;s
+                photo editing feature. Try it now!
+              </p>
+            </div>
+
+            <PhotoChatMessage />
+          </div>
+
+          <div className="p-4 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[46rem]">
+            <div className="py-12 px-4 xl:px-8">
+              <h4 className="h4 mb-4">Video generation</h4>
+              <p className="body-2 mb-[2rem] text-n-3">
+                The world’s most powerful AI photo and video art generation
+                engine. What will you create?
+              </p>
+
+              <ul className="flex items-center justify-between">
+                {brainwaveServicesIcons.map((item, index) => (
+                  <li
+                    key={index}
+                    className={`rounded-2xl flex items-center justify-center ${index === 2
+                        ? "w-[3rem] h-[3rem] p-0.25 bg-conic-gradient md:w-[4.5rem] md:h-[4.5rem]"
+                        : "flex w-10 h-10 bg-n-6 md:w-15 md:h-15"
+                      }`}
+                  >
+                    <div
+                      className={
+                        index === 2
+                          ? "flex items-center justify-center w-full h-full bg-n-7 rounded-[1rem]"
+                          : ""
+                      }
+                    >
+                      <img src={item} width={24} height={24} alt={item} />
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="relative h-[20rem] bg-n-8 rounded-xl overflow-hidden md:h-[25rem]">
+              <img
+                src={service3}
+                className="w-full h-full object-cover"
+                width={520}
+                height={400}
+                alt="Scary robot"
+              />
+
+              <VideoChatMessage />
+              <VideoBar />
+            </div>
+          </div>
         </div>
+
+        <Gradient />
       </div>
     </Section>
   );
