@@ -8,6 +8,7 @@ export default {
     extend: {
       colors: {
         'custom-blue': '#37B8FF',
+        'timeline-round':'#9f39ff',
         color: {
           1: "#37B8FF",
           2: "#FFC876",
