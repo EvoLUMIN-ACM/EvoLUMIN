@@ -7,6 +7,7 @@ import Hero from "../components/Hero";
 import Pricing from "../components/Pricing";
 import Roadmap from "../components/Roadmap";
 import About from "../components/About";
+import Faq from "../components/Faq";
 import Sdg from "./sdg/sdg.jsx";
 import Health from "./health/health.jsx";
 
@@ -23,6 +24,7 @@ const App = () => {
         <Health/>
         <Pricing />
         <Roadmap />
+        <Faq/>
         <Footer />
       </div>
       <ButtonGradient />
