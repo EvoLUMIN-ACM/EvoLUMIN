@@ -1,99 +1,162 @@
-import './timeFlow.css';
+// eslint-disable-next-line no-unused-vars
+import React, { useEffect } from 'react';
+import Image from "next/image";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Timeflow = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <div className="max-w-5xl mx-auto my-12 px-5 relative">
-      <div className="absolute h-full w-1 bg-white left-1/2 transform -translate-x-1/2 top-5">
-        <a href="#" className="block absolute bottom-0 left-1/2 transform -translate-x-1/2 text-lg">
-          <i className="fas fa-caret-up"></i>
-        </a>
+    <div className="flex flex-col mx-[40px] lg:mx-[60px] xl:mx-[120px] 2xl:mx-[240px] my-[30px] md:my-[40px] gap-x-[100px]">
+      <div className="flex justify-center items-center flex-col mb-[40px] md:mb-[60px] mt-[20px]">
+        <div data-aos='zoom-in-up' data-aos-easing='ease-in-sine' className="flex flex-col text-[18px] md:text-[24px] lg:text-[32px] leading-normal clash-display">
+          <h2 className="font-bold text-center md:text-start">Timeline</h2>
+        </div>
+        <div data-aos='zoom-in-up' data-aos-easing='ease-in-sine' className="flex mt-[14px] leading-loose max-w-[355px] 2xl:max-w-[1200px] text-center text-[10px] md:text-[12px] lg:text-[14px]">
+          Here is the breakdown of the time we anticipate using for the upcoming event
+        </div>
       </div>
-      <div className="flex flex-col space-y-10">
-        <div className="flex justify-start">
-          <section className="bg-custom-blue rounded-lg w-full md:w-[calc(50%-40px)] p-4 relative">
-            <i className="fas fa-home absolute bg-custom-blue h-10 w-10 text-center leading-10 rounded-full text-black text-xl shadow-inner right-[-60px] top-4"></i>
-            <div className="absolute h-4 w-4 bg-green-800 top-7 transform rotate-45 -right-1 z-[-1]"></div>
-            <div className="flex items-center justify-between">
-              <span className="text-lg font-semibold">Start Registrations</span>
-              <span>1st June 2022</span>
-            </div>
-          </section>
+
+      <div data-aos='zoom-in-up' data-aos-easing='ease-in-sine' className="custom-timeline">
+        {/* One */}
+        <div className="custom-container custom-left-container">
+          <Image
+            src="/No 1.png"
+            alt="logo"
+            width={53}
+            height={53}
+            className="custom-img"
+          />
+          <div className="flex flex-col justify-start items-start md:justify-end md:items-end">
+            <h2 className="text-[12px] md:text-[16px] text-left md:text-right leading-normal font-bold text-cpink">Hackathon Announcement</h2>
+            <p className="flex md:text-sm text-left md:text-right text-[10px]">
+              The getlinked tech hackathon 1.0 is formally announced to the general public and the teams begin to get ready to register
+            </p>
+          </div>
         </div>
-        <div className="flex justify-end">
-          <section className="bg-custom-blue rounded-lg w-full md:w-[calc(50%-40px)] p-4 relative">
-            <i className="fas fa-star absolute bg-custom-blue h-10 w-10 text-center leading-10 rounded-full text-black text-xl shadow-inner left-[-60px] top-4"></i>
-            <div className="absolute h-4 w-4 bg-green-800 top-7 transform rotate-45 -left-1 z-[-1]"></div>
-            <div className="flex items-center justify-between">
-              <span className="text-lg font-semibold">End Registrations</span>
-              <span>14th Jul 2022</span>
-            </div>
-          </section>
+
+        <div className="custom-container custom-right-container -mt-[15px] md:-mt-[85px] lg:-mt-[70px]">
+          <div className="flex flex-col">
+            <h2 className="text-[12px] md:text-[16px] font-bold text-cpink">November 18, 2023</h2>
+          </div>
         </div>
-        <div className="flex justify-start">
-          <section className="bg-custom-blue rounded-lg w-full md:w-[calc(50%-40px)] p-4 relative">
-            <i className="fas fa-rocket absolute bg-custom-blue h-10 w-10 text-center leading-10 rounded-full text-black text-xl shadow-inner right-[-60px] top-4"></i>
-            <div className="absolute h-4 w-4 bg-green-800 top-7 transform rotate-45 -right-1 z-[-1]"></div>
-            <div className="flex items-center justify-between">
-              <span className="text-lg font-semibold">Opening Ceremony</span>
-              <span>16th July 2022</span>
-            </div>
-            <p className="mt-2 mb-4 text-sm">Hackathon opening ceremony will start 9:15 AM onwards.</p>
-          </section>
+
+        {/* Two */}
+        <div className="custom-container custom-right-container mt-[50px]">
+          <Image
+            src="/No 2.png"
+            alt="logo"
+            width={53}
+            height={53}
+            className="custom-img"
+          />
+          <div className="flex flex-col">
+            <h2 className="text-[12px] md:text-[16px] leading-normal font-bold text-cpink">Teams Registration begins</h2>
+            <p className="flex text-[10px] md:text-sm">
+              Interested teams can now show their interest in the getlinked tech hackathon 1.0 2023 by proceeding to register
+            </p>
+          </div>
         </div>
-        <div className="flex justify-end">
-          <section className="bg-custom-blue rounded-lg w-full md:w-[calc(50%-40px)] p-4 relative">
-            <i className="fas fa-globe absolute bg-custom-blue h-10 w-10 text-center leading-10 rounded-full text-black text-xl shadow-inner left-[-60px] top-4"></i>
-            <div className="absolute h-4 w-4 bg-green-800 top-7 transform rotate-45 -left-1 z-[-1]"></div>
-            <div className="flex items-center justify-between">
-              <span className="text-lg font-semibold">Hackathon Starts</span>
-              <span>16th July 2022</span>
-            </div>
-            <p className="mt-2 mb-4 text-sm">Hackathon coding period will start from 10:30 AM onwards.</p>
-          </section>
+
+        <div className="custom-container custom-left-container -mt-[15px] md:-mt-[85px] lg:-mt-[70px]">
+          <div className="flex flex-col">
+            <h2 className="text-[12px] md:text-[16px] text-left md:text-right font-bold text-cpink">November 18, 2023</h2>
+          </div>
         </div>
-        <div className="flex justify-start">
-          <section className="bg-custom-blue rounded-lg w-full md:w-[calc(50%-40px)] p-4 relative">
-            <i className="fas fa-paper-plane absolute bg-custom-blue h-10 w-10 text-center leading-10 rounded-full text-black text-xl shadow-inner right-[-60px] top-4"></i>
-            <div className="absolute h-4 w-4 bg-green-800 top-7 transform rotate-45 -right-1 z-[-1]"></div>
-            <div className="flex items-center justify-between">
-              <span className="text-lg font-semibold">Session from GeeksforGeeks</span>
-              <span>16th July 2022</span>
-            </div>
-            <p className="mt-2 mb-4 text-sm">Session on Complete Interview Preparation by GeeksForGeeks on 11.30 AM Onwards.</p>
-          </section>
+
+        {/* Three */}
+        <div className="custom-container custom-left-container mt-[60px]">
+          <Image
+            src="/No 3.png"
+            alt="logo"
+            width={53}
+            height={53}
+            className="custom-img"
+          />
+          <div className="flex flex-col justify-start items-start md:justify-end md:items-end">
+            <h2 className="text-[12px] md:text-[16px] text-left md:text-right leading-normal font-bold text-cpink">Team Registration ends</h2>
+            <p className="flex md:text-sm text-left md:text-right text-[10px]">
+              Interested participants are no longer allowed to register
+            </p>
+          </div>
         </div>
-        <div className="flex justify-end">
-          <section className="bg-custom-blue rounded-lg w-full md:w-[calc(50%-40px)] p-4 relative">
-            <i className="fas fa-paper-plane absolute bg-custom-blue h-10 w-10 text-center leading-10 rounded-full text-black text-xl shadow-inner left-[-60px] top-4"></i>
-            <div className="absolute h-4 w-4 bg-green-800 top-7 transform rotate-45 -left-1 z-[-1]"></div>
-            <div className="flex items-center justify-between">
-              <span className="text-lg font-semibold">Session from Postman</span>
-              <span>16th July 2022</span>
-            </div>
-            <p className="mt-2 mb-4 text-sm">Session on APIs 101 using Postman on 4:00 PM Onwards.</p>
-          </section>
+
+        <div className="custom-container custom-right-container -mt-[15px] md:-mt-[50px] lg:-mt-[50px]">
+          <div className="flex flex-col">
+            <h2 className="text-[12px] md:text-[16px] font-bold text-cpink">November 18, 2023</h2>
+          </div>
         </div>
-        <div className="flex justify-start">
-          <section className="bg-custom-blue rounded-lg w-full md:w-[calc(50%-40px)] p-4 relative">
-            <i className="fas fa-paper-plane absolute bg-custom-blue h-10 w-10 text-center leading-10 rounded-full text-black text-xl shadow-inner right-[-60px] top-4"></i>
-            <div className="absolute h-4 w-4 bg-green-800 top-7 transform rotate-45 -right-1 z-[-1]"></div>
-            <div className="flex items-center justify-between">
-              <span className="text-lg font-semibold">Session from Alan AI</span>
-              <span>16th July 2022</span>
-            </div>
-            <p className="mt-2 mb-4 text-sm">Session on Building Voice AI Powered App in React JS with Alan AI on 06:30 PM Onwards.</p>
-          </section>
+
+        {/* Four */}
+        <div className="custom-container custom-right-container mt-[50px]">
+          <Image
+            src="/No 4.png"
+            alt="logo"
+            width={53}
+            height={53}
+            className="custom-img"
+          />
+          <div className="flex flex-col">
+            <h2 className="text-[12px] md:text-[16px] leading-normal font-bold text-cpink">Announcement of the accepted teams and ideas</h2>
+            <p className="flex text-[10px] md:text-sm">
+              All teams whose ideas have been accepted into getlinked tech hackathon 1.0 2023 are formally announced
+            </p>
+          </div>
         </div>
-        <div className="flex justify-end">
-          <section className="bg-custom-blue rounded-lg w-full md:w-[calc(50%-40px)] p-4 relative">
-            <i className="fas fa-globe absolute bg-custom-blue h-10 w-10 text-center leading-10 rounded-full text-black text-xl shadow-inner left-[-60px] top-4"></i>
-            <div className="absolute h-4 w-4 bg-green-800 top-7 transform rotate-45 -left-1 z-[-1]"></div>
-            <div className="flex items-center justify-between">
-              <span className="text-lg font-semibold">Hackathon Ends</span>
-              <span>17th July 2022</span>
-            </div>
-            <p className="mt-2 mb-4 text-sm">Hackathon coding period will end on 10:30 PM.</p>
-          </section>
+
+        <div className="custom-container custom-left-container -mt-[15px] md:-mt-[110px] lg:-mt-[85px]">
+          <div className="flex flex-col">
+            <h2 className="text-[12px] md:text-[16px] text-left md:text-right font-bold text-cpink">November 18, 2023</h2>
+          </div>
+        </div>
+
+        {/* Five */}
+        <div className="custom-container custom-left-container mt-[60px]">
+          <Image
+            src="/No 5.png"
+            alt="logo"
+            width={53}
+            height={53}
+            className="custom-img"
+          />
+          <div className="flex flex-col justify-start items-start md:justify-end md:items-end">
+            <h2 className="text-[12px] md:text-[16px] text-left md:text-right leading-normal font-bold text-cpink">Getlinked Hackathon 1.0 Officially Begins</h2>
+            <p className="flex md:text-sm text-left md:text-right text-[10px]">
+              Accepted teams can now proceed to build their ground breaking skill driven solutions 
+            </p>
+          </div>
+        </div>
+
+        <div className="custom-container custom-right-container -mt-[15px] md:-mt-[85px] lg:-mt-[50px]">
+          <div className="flex flex-col">
+            <h2 className="text-[12px] md:text-[16px] font-bold text-cpink">November 18, 2023</h2>
+          </div>
+        </div>
+
+        {/* Six */}
+        <div className="custom-container custom-right-container mt-[50px]">
+        <Image
+            src="/No 6.png"
+            alt="logo"
+            width={53}
+            height={53}
+            className="custom-img"
+          />
+          <div className="flex flex-col">
+            <h2 className="text-[12px] md:text-[16px] leading-normal font-bold text-cpink">Demo Day</h2>
+            <p className="flex text-[10px] md:text-sm">
+              Teams get the opportunity to pitch their projects to judges. The winner of the hackathon will also be announced on this day
+            </p>
+          </div>
+        </div>
+
+        <div className="custom-container custom-left-container -mt-[15px] md:-mt-[90px] lg:-mt-[70px]">
+          <div className="flex flex-col">
+            <h2 className="text-[12px] md:text-[16px] text-left md:text-right font-bold text-cpink">November 18, 2023</h2>
+          </div>
         </div>
       </div>
     </div>
