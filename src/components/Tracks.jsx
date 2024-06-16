@@ -143,7 +143,7 @@ const Tracks = () => {
                   onMouseLeave={handleMouseLeave}
                   className={`relative transition-all duration-300 ease-in-out flex items-center justify-center h-40 w-[25rem] border border-n-1/10 rounded-lg p-4 transform ${hoveredIndex === index ? 'scale-105 glowing-border' : ''}`}
                   style={{
-                    background: `linear-gradient(to right, #131342, #0f0c17)`,
+                    background: `linear-gradient(to right, #202075, #131342)`,
                     transition: 'background-color 0.3s ease, transform 0.3s ease',
                   }}
                 >
@@ -151,7 +151,7 @@ const Tracks = () => {
                     <div
                       className="absolute inset-0 flex items-center justify-center bg-white p-4 rounded shadow-lg text-white transition-opacity duration-300 ease-in-out opacity-100"
                       style={{
-                        background: `linear-gradient(to right, #131342, #0f0c17)`,
+                        background: `linear-gradient(to right, #202075, #131342)`,
                         transition: 'background-color 0.3s ease',
                       }}
                     >
@@ -172,7 +172,7 @@ const Tracks = () => {
                   onMouseLeave={handleMouseLeave}
                   className={`relative transition-all duration-300 ease-in-out flex items-center justify-center h-40 w-[25rem] border border-n-1/10 rounded-lg p-4 transform ${hoveredIndex === index + 3 ? 'scale-105 glowing-border' : ''}`}
                   style={{
-                    background: `linear-gradient(to right, #131342, #0f0c17)`,
+                    background: `linear-gradient(to right, #202075, #131342)`,
                     transition: 'background-color 0.3s ease, transform 0.3s ease',
                   }}
                 >
@@ -180,7 +180,7 @@ const Tracks = () => {
                     <div
                       className="absolute inset-0 flex items-center justify-center bg-white p-4 rounded shadow-lg text-white transition-opacity duration-300 ease-in-out opacity-100"
                       style={{
-                        background: `linear-gradient(to right, #131342, #0f0c17)`,
+                        background: `linear-gradient(to right, #202075, #131342)`,
                         transition: 'background-color 0.3s ease',
                       }}
                     >
