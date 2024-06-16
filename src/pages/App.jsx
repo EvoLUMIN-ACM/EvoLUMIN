@@ -11,7 +11,6 @@ import About from "../components/About";
 import Sponsors from "../components/Sponsors";
 import Faq from "../components/Faq";
 import Sdg from "./sdg/sdg.jsx";
-import Health from "./health/health.jsx";
 
 const App = () => {
   return (
@@ -21,10 +20,9 @@ const App = () => {
         <Hero />
         <About />
         <Timeline />
+        <Pricing />
         <Tracks />
         {/* <Sdg /> */}
-        <Health/>
-        <Pricing />
         <Sponsors/>
         <Roadmap />
         <Faq/>

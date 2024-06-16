@@ -10,7 +10,6 @@ import ClipPath from "../assets/svg/ClipPath";
 import Arrow from "../assets/svg/Arrow";
 import { benefits } from "../constants";
 
-
 const About = () => {
   return (
     <Section id="about">

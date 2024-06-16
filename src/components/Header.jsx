@@ -37,7 +37,7 @@ const Header = () => {
       }`}
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-      <a className="flex items-center w-[4.5rem] xl:mr-8" href="#hero">
+      <a className="flex items-center w-[3.5rem] xl:mr-8" href="#hero">
          <img src={evolumin1} width={220} height={50} alt="Evolumin Logo" />
          <h2 className="ml-2">Evolumin</h2>
       </a>
