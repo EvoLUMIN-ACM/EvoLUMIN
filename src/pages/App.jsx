@@ -10,7 +10,6 @@ import Pricing from "../components/Pricing";
 import About from "../components/About";
 import Sponsors from "../components/Sponsors";
 import Faq from "../components/Faq";
-import Sdg from "./sdg/sdg.jsx";
 
 const App = () => {
   return (
