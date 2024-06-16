@@ -1,6 +1,8 @@
+/* eslint-disable no-unused-vars */
 import { useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import evolumin from "../assets/evolumin.png";
+import evolumin1 from "../assets/evolumin1.jpg";
 import { navigation } from "../constants";
 import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
@@ -35,10 +37,10 @@ const Header = () => {
       }`}
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-        <a className="block w-[3.5rem] xl:mr-8" href="#hero">
-          <img src={evolumin} width={190} height={40} alt="Evolumin Logo" />
-          <h2>Evolumin</h2>
-        </a>
+      <a className="flex items-center w-[4.5rem] xl:mr-8" href="#hero">
+         <img src={evolumin1} width={220} height={50} alt="Evolumin Logo" />
+         <h2 className="ml-2">Evolumin</h2>
+      </a>
 
         <nav
           className={`${

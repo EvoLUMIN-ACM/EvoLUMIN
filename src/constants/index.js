@@ -208,7 +208,7 @@ export const pricing = [
   {
     id: "0",
     title: "Agriculture 👨‍🌾",
-    // description: "AI chatbot, personalized recommendations",
+    description: "🎓 College Students 🎓",
     price: "1.5Lakh",
     features: [
       "An AI chatbot that can understand your queries",
@@ -219,7 +219,7 @@ export const pricing = [
   {
     id: "1",
     title: "Sustainable Development Goals 🏞️",
-    // description: "Advanced AI chatbot, priority support, analytics dashboard",
+    description: "🎓 College Students 🎓",
     price: "1.5Lakh",
     features: [
       "An advanced AI chatbot that can understand complex queries",
@@ -230,7 +230,7 @@ export const pricing = [
   {
     id: "2",
     title: "Health Care 🧬",
-    // description: "Custom AI chatbot, advanced analytics, dedicated account",
+    description: "🎓 College Students 🎓",
     price: "1.5Lakh",
     features: [
       "An AI chatbot that can understand your queries",
