@@ -61,8 +61,8 @@ export const navigation = [
   },
   {
     id: "4",
-    title: "Roadmap",
-    url: "/#roadmap",
+    title: "Faq",
+    url: "/#faq",
   },
 ];
 
