@@ -204,39 +204,49 @@ export const collabApps = [
   },
 ];
 
+export const seniorSecondaryPricing = [
+  { 
+    id: '2', 
+    title: 'Second Place🥈', 
+    description: 'Senior Secondary Students', 
+    price: '30k', 
+    medal: '🥈' // Silver Medal Emoji 
+  },
+  { 
+    id: '1', 
+    title: 'First Place 🥇', 
+    description: 'Senior Secondary Students', 
+    price: '50k', 
+    medal: '🥇' // Gold Medal Emoji 
+  },
+  { 
+    id: '3', 
+    title: '  Third Place 🥉', 
+    description: 'Senior Secondary Students', 
+    price: '20k', 
+    medal: '🥉' // Bronze Medal Emoji 
+  },
+];
+
+
 export const pricing = [
   {
     id: "0",
     title: "Agriculture 👨‍🌾",
     description: "🎓 College Students 🎓",
     price: "1.5Lakh",
-    features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
-    ],
   },
   {
     id: "1",
     title: "Sustainable Development Goals 🏞️",
     description: "🎓 College Students 🎓",
     price: "1.5Lakh",
-    features: [
-      "An advanced AI chatbot that can understand complex queries",
-      "An analytics dashboard to track your conversations",
-      "Priority support to solve issues quickly",
-    ],
   },
   {
     id: "2",
     title: "Health Care 🧬",
     description: "🎓 College Students 🎓",
     price: "1.5Lakh",
-    features: [
-      "An AI chatbot that can understand your queries",
-      "Personalized recommendations based on your preferences",
-      "Ability to explore the app and its features without any cost",
-    ],
   },
 ];
 
