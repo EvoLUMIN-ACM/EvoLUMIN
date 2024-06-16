@@ -34,8 +34,7 @@ import {
   sliders04,
   telegram,
   twitter,
-  yourlogo,
-  bluewhite
+  yourlogo
 } from "../assets";
 
 export const navigation = [
@@ -51,7 +50,7 @@ export const navigation = [
   },
   {
     id: "2",
-    title: "Pricing",
+    title: "Prize",
     url: "/#pricing",
   },
   
@@ -65,25 +64,17 @@ export const navigation = [
     title: "Roadmap",
     url: "/#roadmap",
   },
-  {
-    id: "5",
-    title: "New account",
-    url: "/#signup",
-    onlyMobile: true,
-  },
-  {
-    id: "6",
-    title: "Sign in",
-    url: "/#login",
-    onlyMobile: true,
-  },
 ];
 
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
 export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
+export const titlecompanyLogos = [yourlogo, yourlogo];
+
+export const diamondcompanyLogos = [yourlogo, yourlogo, yourlogo];
+
+export const goldcompanyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
 
 export const brainwaveServices = [
   "Photo generating",
@@ -216,9 +207,9 @@ export const collabApps = [
 export const pricing = [
   {
     id: "0",
-    title: "Basic",
-    description: "AI chatbot, personalized recommendations",
-    price: "0",
+    title: "Agriculture 👨‍🌾",
+    // description: "AI chatbot, personalized recommendations",
+    price: "1.5Lakh",
     features: [
       "An AI chatbot that can understand your queries",
       "Personalized recommendations based on your preferences",
@@ -227,9 +218,9 @@ export const pricing = [
   },
   {
     id: "1",
-    title: "Premium",
-    description: "Advanced AI chatbot, priority support, analytics dashboard",
-    price: "9.99",
+    title: "Sustainable Development Goals 🏞️",
+    // description: "Advanced AI chatbot, priority support, analytics dashboard",
+    price: "1.5Lakh",
     features: [
       "An advanced AI chatbot that can understand complex queries",
       "An analytics dashboard to track your conversations",
@@ -238,9 +229,9 @@ export const pricing = [
   },
   {
     id: "2",
-    title: "Enterprise",
-    description: "Custom AI chatbot, advanced analytics, dedicated account",
-    price: null,
+    title: "Health Care 🧬",
+    // description: "Custom AI chatbot, advanced analytics, dedicated account",
+    price: "1.5Lakh",
     features: [
       "An AI chatbot that can understand your queries",
       "Personalized recommendations based on your preferences",
