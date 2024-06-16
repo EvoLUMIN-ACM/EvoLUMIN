@@ -15,7 +15,7 @@ const health = [
   { icon: IoGameController, color: "text-green-500", text: "Gamification", hoverText: "Create innovative gamified solutions for autistic individuals to enhance attention maintenance skills, promote facial expression recognition, foster perspective-taking abilities, and facilitate social communication." },
   { icon: IoHardwareChip, color: "text-yellow-500", text: "IoT (Internet of Things)", hoverText: "Develop an automatic garbage alerting system to address plastic pollution. Suggest a tracking system with an integrated mechanism for sorting plastic trash and alerting households producing more plastic waste." },
   { icon: FaMobileAlt, color: "text-purple-500", text: "App Development", hoverText: "Develop an app that supports independent living among the elderly, with features like fall detection, medication reminders, virtual companionship, and access to emergency assistance." },
-  { icon: FaLaptop , color: "text-orange-500", text: "Web Development", hoverText: "Develop a website to bridge communication gaps regarding healthcare needs within university hostels. Include features like ambulance availability, patient information sharing, isolation notifications, and a pharmacy connection for medicine delivery. Design user-friendly interfaces accommodating users with visual, auditory, and cognitive impairments, and a system for real-time monitoring of implantable devices for suspicious activity." }
+  { icon: FaLaptop, color: "text-orange-500", text: "Web Development", hoverText: "Develop a website to bridge communication gaps regarding healthcare needs within university hostels. Include features like ambulance availability, patient information sharing, isolation notifications, and a pharmacy connection for medicine delivery. Design user-friendly interfaces accommodating users with visual, auditory, and cognitive impairments, and a system for real-time monitoring of implantable devices for suspicious activity." }
 ];
 
 const sdg = [
@@ -24,7 +24,7 @@ const sdg = [
   { icon: IoGameController, color: "text-green-500", text: "Gamification", hoverText: "Use gamification to engage users in marine conservation. Through interactive games, raise awareness about sustainable fisheries, marine pollution reduction, and ocean health preservation. (SDG 14)" },
   { icon: IoHardwareChip, color: "text-yellow-500", text: "IoT (Internet of Things)", hoverText: "Design an IoT waste management system with mobile apps for the real-time monitoring and reporting to prevent health hazards from overflowing trash bins in public areas. (SDG 11)" },
   { icon: FaMobileAlt, color: "text-purple-500", text: "App Development", hoverText: "Develop a mobile app analyzing educational records for rural and specially-abled students, offering personalized learning plans and resources to enhance academic performance and ensure equitable education access. (SDG 4)" },
-  { icon: FaLaptop , color: "text-orange-500", text: "Web Development", hoverText: "Create a web app to monitor Ganga River health, collecting real-time data on water quality, pollution, and biodiversity to support restoration efforts and promoting sustainable practices. (SDG 14)" }
+  { icon: FaLaptop, color: "text-orange-500", text: "Web Development", hoverText: "Create a web app to monitor Ganga River health, collecting real-time data on water quality, pollution, and biodiversity to support restoration efforts and promoting sustainable practices. (SDG 14)" }
 ];
 
 const Tracks = () => {
@@ -95,7 +95,7 @@ const Tracks = () => {
                     }}
                   >
                     {hoveredIndex === index ? (
-                      <div 
+                      <div
                         className="absolute inset-0 flex items-center justify-center bg-white p-4 rounded shadow-lg text-white transition-opacity duration-300 ease-in-out opacity-100"
                         style={{
                           background: `linear-gradient(to right, #131342, #0f0c17)`,
@@ -120,12 +120,22 @@ const Tracks = () => {
         <br /><br /><br />
 
         <div className="relative z-1 flex items-center justify-center h-[46rem] mb-5 p-8 border border-n-1/10 rounded-3xl overflow-hidden lg:p-20 xl:h-[46rem] mt-[-3rem]">
+          <div className="absolute top-0 left-0 w-full h-full pointer-events-none md:w-3/5 xl:w-auto">
+            <img
+              className="w-full h-full object-cover md:object-right"
+              width={1286}
+              alt="Smartest AI"
+              height={740}
+              src={service1}
+            />
+          </div>
+
           <div className="relative z-1 max-w-[50rem] text-center">
             <h4 className="h4 mb-4">Sustainable Development Goals</h4>
             <p className="body-2 mb-[3rem] text-n-3">
-              Brainwave unlocks the potential of AI-powered applications
+              To know more about SDG, visit <a href="https://sdgs.un.org/goals" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">UNESCO's official page</a>.
             </p>
-            <div className="grid grid-cols-2 gap-10 mt-4"> {/* Adjusted the gap here */}
+            <div className="grid grid-cols-2 gap-10 mt-4">
               {sdg.slice(0, 3).map(({ icon: Icon, color, text, hoverText }, index) => (
                 <div
                   key={index}
@@ -138,7 +148,7 @@ const Tracks = () => {
                   }}
                 >
                   {hoveredIndex === index ? (
-                    <div 
+                    <div
                       className="absolute inset-0 flex items-center justify-center bg-white p-4 rounded shadow-lg text-white transition-opacity duration-300 ease-in-out opacity-100"
                       style={{
                         background: `linear-gradient(to right, #131342, #0f0c17)`,
@@ -167,7 +177,7 @@ const Tracks = () => {
                   }}
                 >
                   {hoveredIndex === index + 3 ? (
-                    <div 
+                    <div
                       className="absolute inset-0 flex items-center justify-center bg-white p-4 rounded shadow-lg text-white transition-opacity duration-300 ease-in-out opacity-100"
                       style={{
                         background: `linear-gradient(to right, #131342, #0f0c17)`,
