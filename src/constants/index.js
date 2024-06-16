@@ -208,7 +208,7 @@ export const pricing = [
   {
     id: "0",
     title: "Agriculture 👨‍🌾",
-    description: "🎓 College Students 🎓",
+    description: "🎓 College Students ",
     price: "1.5Lakh",
     features: [
       "An AI chatbot that can understand your queries",
