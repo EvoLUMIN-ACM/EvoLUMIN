@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Pricing from "../components/Pricing";
-import Roadmap from "../components/Roadmap";
+// import Roadmap from "../spares/Roadmap.jsx";
 import About from "../components/About";
 import Sponsors from "../components/Sponsors";
 import Faq from "../components/Faq";
@@ -24,7 +24,7 @@ const App = () => {
         <Tracks />
         {/* <Sdg /> */}
         <Sponsors/>
-        <Roadmap />
+        {/* <Roadmap /> */}
         <Faq/>
         <Footer />
       </div>

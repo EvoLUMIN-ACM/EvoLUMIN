@@ -131,6 +131,8 @@ const Tracks = () => {
             />
           </div>
 
+ {/* sdg */}
+ 
           <div className="relative z-1 max-w-[50rem] text-center">
             <h4 className="h4 mb-4">Sustainable Development Goals</h4>
             <p className="body-2 mb-[3rem] text-n-3">
