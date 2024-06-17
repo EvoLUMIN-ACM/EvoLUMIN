@@ -8,6 +8,7 @@ import { useState } from 'react';
 import { LuBrainCircuit } from "react-icons/lu";
 import { BsShieldLockFill } from "react-icons/bs";
 import { IoGameController, IoHardwareChip } from "react-icons/io5";
+import { PiDevicesBold } from "react-icons/pi";
 import { brainwaveServices } from "../constants";
 
 const health = [
@@ -26,6 +27,12 @@ const sdg = [
   { icon: IoHardwareChip, color: "text-yellow-500", text: "IoT (Internet of Things)", hoverText: "Design an IoT waste management system with mobile apps for the real-time monitoring and reporting to prevent health hazards from overflowing trash bins in public areas. (SDG 11)" },
   { icon: FaMobileAlt, color: "text-purple-500", text: "App Development", hoverText: "Develop a mobile app analyzing educational records for rural and specially-abled students, offering personalized learning plans and resources to enhance academic performance and ensure equitable education access. (SDG 4)" },
   { icon: FaLaptop, color: "text-orange-500", text: "Web Development", hoverText: "Create a web app to monitor Ganga River health, collecting real-time data on water quality, pollution, and biodiversity to support restoration efforts and promoting sustainable practices. (SDG 14)" }
+];
+
+const agri = [
+  { icon: LuBrainCircuit, color: "text-red-500", text: "AI Solutions", hoverText: "Develop a platform for real-time crop analysis, allowing farmers to upload images for instant identification of crop types, weeds, diseases, pests, and nutrient deficiencies. The goal is to streamline decision-making and resource management, enhancing agricultural efficiency." },
+  { icon: IoHardwareChip, color: "text-yellow-500", text: "IoT (Internet of Things)", hoverText: "The agricultural sector requires a transformative solution integrating IoT, AI, and ML to monitor water resources, soil fertility, and crop health. Develop an automated system providing real-time insights and tailored recommendations to farmers which is essential for optimising resources and enhancing productivity sustainably." },
+  { icon: PiDevicesBold, color: "text-purple-500", text: "Web/App Development", hoverText: "Farmers face obstacles like unpredictable weather, pests, and market volatility, hindering productivity. Limited access to digital tools exacerbates these challenges, preventing effective crop management and market navigation. Develop accessible web/mobile apps can empower farmers, enhancing productivity and sustainability." },
 ];
 
 const Tracks = () => {
@@ -56,12 +63,12 @@ const Tracks = () => {
 
         <div className="relative z-1 grid gap-5 lg:grid-cols-2">
           <div className="relative min-h-[39rem] border border-n-1/10 rounded-3xl overflow-hidden">
-            <div className="absolute inset-0">
+            <div className="absolute inset-10">
               <img
                 src={service2}
-                className="h-full w-full object-cover"
-                width={630}
-                height={750}
+                className="h-[30rem] w-[30rem]"
+                width={200}
+                height={200}
                 alt="robot"
               />
             </div>
@@ -69,12 +76,40 @@ const Tracks = () => {
             <div id="agriculture" className="absolute inset-0 flex flex-col justify-end p-8 bg-gradient-to-b from-n-8/0 to-n-8/90 lg:p-15">
               <h4 className="h4 mb-4">Agriculture</h4>
               <p className="body-2 mb-[3rem] text-n-3">
-                Automatically enhance your photos using our AI app&apos;s
-                photo editing feature. Try it now!
+                Possible innovation in agriculture...
               </p>
+              <div className="grid grid-cols-1 gap-6 mt-4">
+                {agri.map(({ icon: Icon, color, text, hoverText }, index) => (
+                  <div
+                    key={index}
+                    onMouseEnter={() => handleMouseEnter(index + 100)}
+                    onMouseLeave={handleMouseLeave}
+                    className={`relative transition-all duration-300 ease-in-out flex items-center justify-center h-[13rem] w-full border border-n-1/10 rounded-lg p-4 transform ${hoveredIndex === index + 100 ? 'scale-105 glowing-border' : ''}`}
+                    style={{
+                      background: `linear-gradient(to right, #131342, #0f0c17)`,
+                      transition: 'background-color 0.3s ease, transform 0.3s ease',
+                    }}
+                  >
+                    {hoveredIndex === index + 100 ? (
+                      <div
+                        className="absolute inset-0 flex items-center justify-center bg-white p-4 rounded shadow-lg text-white transition-opacity duration-300 ease-in-out opacity-100"
+                        style={{
+                          background: `linear-gradient(to right, #131342, #0f0c17)`,
+                          transition: 'background-color 0.3s ease',
+                        }}
+                      >
+                        {hoverText}
+                      </div>
+                    ) : (
+                      <div className="flex flex-col items-center justify-center transition-opacity duration-300 ease-in-out" style={{ opacity: hoveredIndex === index + 100 ? 0 : 1 }}>
+                        <Icon className={`h-12 w-12 ${color}`} />
+                        <p className="mt-2 text-center text-sm">{text}</p>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
             </div>
-
-            <PhotoChatMessage />
           </div>
 
           <div className="p-4 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[46rem]">
@@ -131,8 +166,8 @@ const Tracks = () => {
             />
           </div>
 
- {/* sdg */}
- 
+          {/* sdg */}
+
           <div className="relative z-1 max-w-[50rem] text-center">
             <h4 className="h4 mb-4">Sustainable Development Goals</h4>
             <p className="body-2 mb-[3rem] text-n-3">
