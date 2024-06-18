@@ -8,6 +8,7 @@ const Faq = () => {
       <div className="container mx-auto">
         <div className="text-center">
           <div className="section-title-header">
+            <br /><br /><br /><br />
             <h2 className="section-title text-6xl font-semibold mb-4">FAQs</h2>
             <p className="text-lg">Answers to the most frequently asked questions!</p>
           </div>

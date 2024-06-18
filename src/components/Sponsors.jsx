@@ -7,7 +7,8 @@ import { curve, heroBackground, robot } from "../assets";
 
 const Sponsors = ({ className }) => {
   return (
-    <div className={`${className} relative`}>
+    <div id="sponsor" className={`${className} relative`}>
+      <br /><br /><br /><br />
       <Heading fontWeight="font-bold" title="Sponsors🎉" />
 
       <div className="mt-8 text-center">

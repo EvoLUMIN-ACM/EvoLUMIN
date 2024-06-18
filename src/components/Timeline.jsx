@@ -6,8 +6,9 @@ import Timeflow from "./timeFlow";
 
 const Timeline = () => {
   return (
-    <Section crosses id="timeline">
+    <Section crosses id="timeline" className="relative lg:py-5 xl:py-[5.8rem]">
       <div className="container lg:flex">
+        <br /><br /><br /><br />
         <div className="max-w-[25rem]">
           <h1 className="h3 mb-4 md:mb-8">
             Timeline

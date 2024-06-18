@@ -47,7 +47,7 @@ const Tracks = () => {
   };
 
   return (
-    <Section id="tracks">
+    <Section id="tracks" className="relative py-0 lg:py-5 xl:py-0">
       <style>{`
         .glowing-border {
           border: 2px solid #00f;
@@ -55,9 +55,9 @@ const Tracks = () => {
         }
       `}</style>
       <div className="container relative z-2">
-        <br />
+        <br /><br /><br /><br />
         <Heading
-          className="md:max-w-md lg:max-w-2xl"
+          className="md:max-w-md lg:max-w-2xl lg:mb-5"
           title="Tracks"
         />
 
@@ -113,7 +113,7 @@ const Tracks = () => {
           </div>
 
           <div className="p-4 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[46rem]">
-            <div className="py-12 px-4 xl:px-8">
+            <div className="py-5 px-4 xl:px-8">
               <h4 className="h4 mb-4">Healthcare</h4>
               <p className="body-2 mb-[2rem] text-n-3">
                 Domains in healthcare...
