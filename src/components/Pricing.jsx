@@ -8,7 +8,7 @@ import { LeftLine, RightLine } from "./design/Pricing";
 
 const Pricing = () => {
   return (
-    <Section className="overflow-hidden relative py-0 lg:py-5 xl:py-0" id="pricing">
+    <Section className="overflow-hidden relative pt-0 lg:pt-5 xl:pt-0" id="pricing">
       <div className="container relative z-2">
         <br /><br /><br /><br />
         <Heading className="lg:mb-10" fontWeight="font-bold" title="Prize Pool💸" />
