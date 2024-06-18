@@ -12,8 +12,7 @@ import { benefits } from "../constants";
 
 const About = () => {
   return (
-    <Section id="about" className="relative py-0 lg:py-5 xl:py-0">
-      <br /><br /><br />
+    <Section id="about" className="relative py-0 lg:py-5 xl:py-0 pb-0 lg:pb-0 xl:pb-0">
       <div className="container">
         <br />
         <Heading

@@ -47,7 +47,7 @@ const Tracks = () => {
   };
 
   return (
-    <Section id="tracks" className="relative py-0 lg:py-5 xl:py-0">
+    <Section id="tracks" className="relative pt-0 lg:pt-0 xl:pt-0 pb-0 lg:pb-0 xl:pb-0">
       <style>{`
         .glowing-border {
           border: 2px solid #00f;
