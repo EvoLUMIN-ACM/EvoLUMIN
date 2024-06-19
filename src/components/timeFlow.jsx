@@ -21,8 +21,8 @@ const Timeflow = () => {
             <img src={NO1} alt="Step 1" className="absolute h-10 w-10 rounded-full right-[-60px] top-4"/>
             <div className="absolute h-4 w-4 bg-timeline-round top-7 transform rotate-45 -right-1 z-[-1]"></div>
             <div className="flex items-center justify-between">
-              <span className="text-lg font-semibold">Start Registrations</span>
-              <span>1st June 2022</span>
+              <span className="text-lg font-semibold">Starting of Ideation Phase</span>
+              <span>13th June 2024</span>
             </div>
           </section>
         </div>
@@ -33,7 +33,7 @@ const Timeflow = () => {
             <div className="absolute h-4 w-4 bg-timeline-round top-7 transform rotate-45 -left-1 z-[-1]"></div>
             <div className="flex items-center justify-between">
               <span className="text-lg font-semibold">End Registrations</span>
-              <span>14th Jul 2022</span>
+              <span>11th July 2024</span>
             </div>
           </section>
         </div>
@@ -43,10 +43,10 @@ const Timeflow = () => {
             <img src={NO3} alt="Step 3" className="absolute h-10 w-10 rounded-full right-[-60px] top-4"/>
             <div className="absolute h-4 w-4 bg-timeline-round top-7 transform rotate-45 -right-1 z-[-1]"></div>
             <div className="flex items-center justify-between">
-              <span className="text-lg font-semibold">Opening Ceremony</span>
-              <span>16th July 2022</span>
+              <span className="text-lg font-semibold">Closing of Ideation</span>
+              <span>13th July 2024</span>
             </div>
-            <p className="mt-2 mb-4 text-sm">Hackathon opening ceremony will start 9:15 AM onwards.</p>
+            <p className="mt-2 mb-4 text-sm">Participants can submit their ideas by 11:55</p>
           </section>
         </div>
 
@@ -55,7 +55,7 @@ const Timeflow = () => {
             <img src={NO4} alt="Step 4" className="absolute h-10 w-10 rounded-full left-[-60px] top-4"/>
             <div className="absolute h-4 w-4 bg-timeline-round top-7 transform rotate-45 -left-1 z-[-1]"></div>
             <div className="flex items-center justify-between">
-              <span className="text-lg font-semibold">Hackathon Starts</span>
+              <span className="text-lg font-semibold">Result Publication</span>
               <span>16th July 2022</span>
             </div>
             <p className="mt-2 mb-4 text-sm">Hackathon coding period will start from 10:30 AM onwards.</p>
