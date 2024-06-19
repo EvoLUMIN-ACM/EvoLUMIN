@@ -44,6 +44,11 @@ export const navigation = [
     url: "/#about",
   },
   {
+    id: "0",
+    title: "Rules & Regulations",
+    url: "/#rules",
+  },
+  {
     id: "1",
     title: "Timeline",
     url: "/#timeline",
@@ -291,9 +296,9 @@ export const benefits = [
 export const socials = [
   {
     id: "0",
-    title: "Discord",
+    title: "LinkedIn",
     iconUrl: discordBlack,
-    url: "#",
+    url: "https://www.linkedin.com/in/evolumin/",
   },
   {
     id: "1",

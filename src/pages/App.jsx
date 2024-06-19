@@ -7,7 +7,8 @@ import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Pricing from "../components/Pricing";
 // import Roadmap from "../spares/Roadmap.jsx";
-import About from "../components/About";
+import Rules from "../components/Rules.jsx";
+import About from "../components/About.jsx";
 import Sponsors from "../components/Sponsors";
 import Faq from "../components/Faq";
 
@@ -18,6 +19,7 @@ const App = () => {
         <Header />
         <Hero />
         <About />
+        <Rules />
         <Timeline />
         <Pricing />
         <Tracks />

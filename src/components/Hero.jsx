@@ -37,8 +37,10 @@ const Hero = () => {
             <br />
             Illuminate Tomorrow...
           </p>
-          <Button href="/pricing" white>
-            Join us
+          <Button white>
+            <a href="https://evolumin.devfolio.co/" target="_blank" rel="noreferrer">
+              Register Now
+            </a>
           </Button>
         </div>
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
