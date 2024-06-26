@@ -1,6 +1,6 @@
-import { bluewhite, amrita } from "../assets";
+import { bluewhite } from "../assets";
 
-const Notification2 = ({ className, title, text }) => {
+const Notification = ({ className, title, text }) => {
   return (
     <div
       className={`${
@@ -8,15 +8,15 @@ const Notification2 = ({ className, title, text }) => {
       } flex items-center justify-center p-4 pr-6 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl gap-5`}
     >
       <img
-        src={amrita}
-        width={130}
-        height={130}
+        src={bluewhite}
+        width={70}
+        height={70}
         alt="image"
-        className="rounded"
+        className="rounded-x1"
       />
   
       <div className="flex-1 text-center">
-        <h7 className="mb-0 font-semibold text-base">{title}</h7><br />
+        <h7 className="mb-1 font-semibold text-base">{title}</h7><br />
         <h7 className="mb-1 font-semibold text-base">{text}</h7>
       </div>
     </div>
@@ -24,4 +24,4 @@ const Notification2 = ({ className, title, text }) => {
   
 };
 
-export default Notification2;
+export default Notification;

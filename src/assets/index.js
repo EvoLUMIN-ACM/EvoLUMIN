@@ -72,6 +72,7 @@ import plant from "./benefits/plant.jpg";
 import medical from "./benefits/medical.jpg";
 import sdg from "./benefits/sdg.jpg";
 import evolumin from "./evolumin1.jpg";
+import amrita from "./amrita.png";
 
 import discordBlack from "./socials/discord.svg";
 import facebook from "./socials/facebook.svg";
@@ -152,4 +153,5 @@ export {
   telegram,
   twitter,
   evolumin,
+  amrita,
 };

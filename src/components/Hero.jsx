@@ -6,6 +6,7 @@ import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
 import { ScrollParallax } from "react-just-parallax";
 import { useRef } from "react";
 import Notification from "./Notification";
+import Notification2 from "./Notification2";
 
 const Hero = () => {
   const parallaxRef = useRef(null);
@@ -60,14 +61,14 @@ const Hero = () => {
                 <ScrollParallax isAbsolutelyPositioned>
                   <Notification
                     className="hidden absolute -left-[5.5rem] bottom-[7.5rem] w-[18rem] xl:flex"
-                    title="Amrita Vishwa"
-                    text="Vidyapeetham"
+                    title="Amritapuri"
+                    text="Campus"
                     logo="amrita"
                   />
                 </ScrollParallax>
 
                 <ScrollParallax isAbsolutelyPositioned>
-                  <Notification
+                  <Notification2
                     className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[16rem] xl:flex"
                     title="ACM Chapter"
                     text="Amritapuri"
