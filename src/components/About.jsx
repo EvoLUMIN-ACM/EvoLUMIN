@@ -1,6 +1,6 @@
 import Section from "./Section";
 import Heading from "./Heading";
-import { service1, check } from "../assets";
+import { evolumin, check } from "../assets";
 import { brainwaveServices } from "../constants";
 import {
   Gradient
@@ -16,27 +16,34 @@ const About = () => {
       <div className="container">
         <br />
         <Heading
-          title="About EvoLUMIN"
+          title="About"
         />
 
         <div className="relative">
-          <div className="relative z-1 flex items-center h-[39rem] mb-5 p-8 border border-n-1/10 rounded-3xl overflow-hidden lg:p-20 xl:h-[46rem] mt-[-3rem]">
-            <div className="absolute top-0 left-0 w-full h-full pointer-events-none md:w-3/5 xl:w-auto">
+          <div className="relative z-1 flex items-center h-[39rem] mb-5 p-8 border border-n-1/10 rounded-3xl overflow-hidden lg:p-20 xl:h-[40rem] mt-[-3rem]">
+            <div className="absolute top-0 left-0 w-full h-full pointer-events-none md:w-4/5 xl:w-auto">
               <img
-                className="w-full h-full object-cover md:object-right"
-                width={800}
-                alt="Smartest AI"
-                height={730}
-                src={service1}
+                className="w-[40rem] h-full object-cover md:object-right"
+                width={1000}
+                alt="EvoLUMIN"
+                height={1000}
+                src={evolumin}
               />
             </div>
 
-            <div className="relative z-1 max-w-[17rem] ml-auto">
-              <h4 className="h4 mb-4">Smartest AI</h4>
+            <div className="relative z-1 max-w-[35rem] ml-auto">
+              <h4 className="h4 mb-4">EvoLUMIN</h4>
               <p className="body-2 mb-[3rem] text-n-3">
-                Brainwave unlocks the potential of AI-powered applications
+                EvoLumin is a national-level tech hackathon thats being conducted by the ACM Student Chapter, 
+                Amritapuri. We call upon the brightest minds to converge and create impactful solutions. We 
+                aim to provide participants with the opportunity to leverage their technical skills to
+                tackle real-world challenges. Participants will unleash their potential, embrace
+                collaboration, and spark social impact through innovative problem-solving.
               </p>
               <ul className="body-2">
+                <h6 className="h6 mb-[1rem] text-n-3">
+                  Event Highlights
+                </h6>
                 {brainwaveServices.map((item, index) => (
                   <li
                     key={index}

@@ -87,9 +87,10 @@ export const diamondcompanyLogos = [yourlogo, yourlogo, yourlogo];
 export const goldcompanyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
 
 export const brainwaveServices = [
-  "Photo generating",
-  "Photo enhance",
-  "Seamless Integration",
+  "Ideation Period",
+  "Offline Hackathon Experience",
+  "Guest Speakers from Industry",
+  "Cash Prizes, Goodies & More...",
 ];
 
 export const brainwaveServicesIcons = [
