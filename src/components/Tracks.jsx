@@ -171,7 +171,7 @@ const Tracks = () => {
           <div className="relative z-1 max-w-[50rem] text-center">
             <h4 className="h4 mb-4">Sustainable Development Goals</h4>
             <p className="body-2 mb-[3rem] text-n-3">
-              To know more about SDG, visit <a href="https://sdgs.un.org/goals" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">UNESCO`&apos;`s official page</a>.
+              To know more about SDG, visit <a href="https://sdgs.un.org/goals" target="_blank" rel="noopener noreferrer" className="text-blue-500 underline">UNESCO's official page</a>.
             </p>
             <div className="grid grid-cols-2 gap-10 mt-4 ">
               {sdg.slice(0, 3).map(({ icon: Icon, color, text, hoverText }, index) => (
