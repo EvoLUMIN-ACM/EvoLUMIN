@@ -19,7 +19,7 @@ const Faq = () => {
             <div>
               <h3 className="text-timeline-round text-lg font-bold">Who can participate?</h3>
               <br/>
-              <p className="text-gray-600">The hackathon is open for students from all over India. It is the right place for anyone who`&apos;`s interested in learning and innovating with their ideas.</p>
+              <p className="text-gray-600">Our hackathon is designed to inspire and challenge higher secondary school and college students to participate and showcase their innovative skills.</p>
             </div>
           </div>
           <div className="single-intro-text bg-white rounded-lg shadow-md p-6 flex items-center">
@@ -27,7 +27,7 @@ const Faq = () => {
             <div>
               <h3 className="text-timeline-round text-lg font-semibold">How much will it cost?</h3>
               <br/>
-              <p className="text-gray-600">Although registration for TSEC Hacks is completely free, a small participation fee (200 INR per team) has to be paid in case your team is shortlisted.</p>
+              <p className="text-gray-600">There will be no participation fee, but a nominal fee will be charged for the finalists coming to the campus.</p>
             </div>
           </div>
           <div className="single-intro-text bg-white rounded-lg shadow-md p-6 flex items-center">
@@ -35,7 +35,7 @@ const Faq = () => {
             <div>
               <h3 className="text-timeline-round text-lg font-semibold">How can I apply?</h3>
               <br/>
-              <p className="text-gray-600">The registration can be done by clicking the register button <a href="#" className="text-blue-500 underline">here</a> and filling up a Google form with your team details. Registrations end on 1st March 2022.</p>
+              <p className="text-gray-600">The registration can be done by clicking the register button <a href="#" className="text-blue-500 underline">here</a> or through Devfolio. Registrations end on 11<sup>th</sup> July 2024.</p>
             </div>
           </div>
           <div className="single-intro-text bg-white rounded-lg shadow-md p-6 flex items-center">
