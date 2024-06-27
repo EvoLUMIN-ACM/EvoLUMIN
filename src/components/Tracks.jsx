@@ -21,12 +21,12 @@ const health = [
 ];
 
 const sdg = [
-  { icon: LuBrainCircuit, color: "text-red-500", text: "AI Solutions", hoverText: "Develop an AI-powered system to enhance governance and justice by improving transparency, efficiency, and accountability within institutions. (SDG 16)" },
-  { icon: BsShieldLockFill, color: "text-blue-500", text: "Cyber Security", hoverText: "Develop comprehensive cybersecurity solutions tailored for smart cities, focusing on safeguarding critical infrastructure against cyber threats to ensure urban resilience and safety. (SDG 11)" },
-  { icon: IoGameController, color: "text-green-500", text: "Gamification", hoverText: "Use gamification to engage users in marine conservation. Through interactive games, raise awareness about sustainable fisheries, marine pollution reduction, and ocean health preservation. (SDG 14)" },
-  { icon: IoHardwareChip, color: "text-yellow-500", text: "IoT (Internet of Things)", hoverText: "Design an IoT waste management system with mobile apps for the real-time monitoring and reporting to prevent health hazards from overflowing trash bins in public areas. (SDG 11)" },
+  { icon: LuBrainCircuit, color: "text-red-500", text: "AI Solutions", hoverText: "Develop an AI-driven software tool that aggregates and analyzes real-time energy consumption data from smart meters to provide households and businesses with detailed, actionable insights to reduce energy consumption and improve efficiency. (SDG 7)" },
+  // { icon: BsShieldLockFill, color: "text-blue-500", text: "Cyber Security", hoverText: "Develop comprehensive cybersecurity solutions tailored for smart cities, focusing on safeguarding critical infrastructure against cyber threats to ensure urban resilience and safety. (SDG 11)" },
+  { icon: IoGameController, color: "text-green-500", text: "Gamification", hoverText: "Develop an interactive software platform that uses game technologies to simulate real-world industrial scenarios, enhancing skill development and training effectiveness for the industrial workforce. (SDG 9)" },
+  { icon: IoHardwareChip, color: "text-yellow-500", text: "IoT (Internet of Things)", hoverText: "Design an IoT waste segregation management system for the real-time monitoring and reporting to prevent health hazards from overflowing trash bins in public areas. (SDG 11)" },
   { icon: FaMobileAlt, color: "text-purple-500", text: "App Development", hoverText: "Develop a mobile app analyzing educational records for rural and specially-abled students, offering personalized learning plans and resources to enhance academic performance and ensure equitable education access. (SDG 4)" },
-  { icon: FaLaptop, color: "text-orange-500", text: "Web Development", hoverText: "Create a web app to monitor Ganga River health, collecting real-time data on water quality, pollution, and biodiversity to support restoration efforts and promoting sustainable practices. (SDG 14)" }
+  // { icon: FaLaptop, color: "text-orange-500", text: "Web Development", hoverText: "Create a web app to monitor Ganga River health, collecting real-time data on water quality, pollution, and biodiversity to support restoration efforts and promoting sustainable practices. (SDG 14)" }
 ];
 
 const agri = [
