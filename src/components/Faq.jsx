@@ -41,9 +41,9 @@ const Faq = () => {
           <div className="single-intro-text bg-white rounded-lg shadow-md p-6 flex items-center">
             <FaHeart className="text-5xl text-blue-500 mr-4" />
             <div>
-              <h3 className=" text-timeline-round text-lg font-semibold">What if I don`&apos;`t know how to code?</h3>
+              <h3 className=" text-timeline-round text-lg font-semibold">How long will the hackathon last?</h3>
               <br/>
-              <p className="text-gray-600">No worries! Interest in learning and working with technology is much more important than your current experience level.</p>
+              <p className="text-gray-600">Following the initial screening, top participants will be invited to our campus. The offline hackathon will last for 36 hours.</p>
             </div>
           </div>
           <div className="single-intro-text bg-white rounded-lg shadow-md p-6 flex items-center">
@@ -51,7 +51,7 @@ const Faq = () => {
             <div>
               <h3 className="text-timeline-round text-lg font-semibold">What are the prizes to be won?</h3>
               <br/>
-              <p className="text-gray-600">Exciting prizes and incentives will be announced soon. Stay tuned for further updates!</p>
+              <p className="text-gray-600">There is an attractive prize pool of 5.5 lakhs , detailed prize breakdown will be revealed later.</p>
             </div>
           </div>
           <div className="single-intro-text bg-white rounded-lg shadow-md p-6 flex items-center">
@@ -59,7 +59,7 @@ const Faq = () => {
             <div>
               <h3 className="text-timeline-round text-lg font-semibold">Can we apply as a team?</h3>
               <br/>
-              <p className="text-gray-600">Yes! Teams of 2-4 people are encouraged. Aim for a mix of people with design and development skills.</p>
+              <p className="text-gray-600">Yes! Teams of 2-4 people are encouraged. Check out the <a href="#rules" className="text-blue-500 underline">rules and regulations</a> to form the team.</p>
             </div>
           </div>
         </div>
