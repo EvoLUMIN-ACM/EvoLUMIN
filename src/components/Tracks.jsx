@@ -12,22 +12,25 @@ import { PiDevicesBold } from "react-icons/pi";
 import { brainwaveServices } from "../constants";
 
 const health = [
-  { icon: LuBrainCircuit, color: "text-red-500", text: "AI Solutions", hoverText: "Develop an AI system for proactive healthcare that analyzes real-time vitals, detects anomalies, predicts risks, triggers automated responses, and generates personalized health reports with visualizations. Focus on user-friendly interfaces and clear action plans for early intervention." },
-  { icon: BsShieldLockFill, color: "text-blue-500", text: "Cyber Security", hoverText: "Implement an authentication and encrypted mechanism that ensures only the authorized can communicate with implantable medical devices like pacemakers, defibrillators, and insulin pumps, preventing unauthorized access and potential malicious activities. Develop an emergency access and override system for critical situations." },
+  { icon: LuBrainCircuit, color: "text-red-500", text: "AI Solutions", hoverText: "Develop an AI system that analyzes real-time vitals, detects anomalies, predicts risks, triggers responses, and generates personalized health reports, emphasizing user-friendly interfaces and early intervention." },
+  { icon: BsShieldLockFill, color: "text-blue-500", text: "Cyber Security", hoverText: "Implement secure authentication and encryption for implantable devices like pacemakers, ensuring authorized access only, preventing unauthorized use, and creating an emergency override system for critical situations." },
   { icon: IoGameController, color: "text-green-500", text: "Gamification", hoverText: "Create innovative gamified solutions for autistic individuals to enhance attention maintenance skills, promote facial expression recognition, foster perspective-taking abilities, and facilitate social communication." },
-  { icon: IoHardwareChip, color: "text-yellow-500", text: "IoT (Internet of Things)", hoverText: "Develop an automatic garbage alerting system to address plastic pollution. Suggest a tracking system with an integrated mechanism for sorting plastic trash and alerting households producing more plastic waste." },
+  { icon: IoHardwareChip, color: "text-yellow-500", text: "IoT (Internet of Things)", hoverText: "Develop an IoT system for farmers to prevent sunstroke by monitoring real-time environmental conditions and health metrics, alerting risks, and suggesting health maintenance solutions during fieldwork in sunlight." },
   { icon: FaMobileAlt, color: "text-purple-500", text: "App Development", hoverText: "Develop an app that supports independent living among the elderly, with features like fall detection, medication reminders, virtual companionship, and access to emergency assistance." },
-  { icon: FaLaptop, color: "text-orange-500", text: "Web Development", hoverText: "Create a website for healthcare communication in university hostels with features like ambulance tracking, patient info sharing, isolation alerts, and pharmacy delivery. Ensure accessibility for all impairments and real-time monitoring of implantable devices." }
+  { icon: FaLaptop, color: "text-orange-500", text: "Web Development", hoverText: "Create a university hostel healthcare website with ambulance tracking, patient info sharing, isolation alerts, pharmacy delivery, ensuring access to users with impairments and real time monitoring of devices." }
 ];
 
 const sdg = [
   { icon: FaMobileAlt, color: "text-purple-500", text: "App Development", hoverText: "Create a mobile app for rural and special-needs students with personalized learning plans to improve academic performance. (SDG 4)" },
   { icon: IoGameController, color: "text-green-500", text: "Gamification", hoverText: "Design a gamified platform that simulates real-world industrial scenarios to effectively train and develop skills for the workforce in industrial settings. (SDG 9)" },
   { icon: LuBrainCircuit, color: "text-red-500", text: "AI Solutions", hoverText: "Create an AI tool that leverages smart meter data to optimize energy use for homes and businesses, promoting efficiency and sustainability. (SDG 7)" },
-  // { icon: BsShieldLockFill, color: "text-blue-500", text: "Cyber Security", hoverText: "Develop comprehensive cybersecurity solutions tailored for smart cities, focusing on safeguarding critical infrastructure against cyber threats to ensure urban resilience and safety. (SDG 11)" },
-  { icon: IoHardwareChip, color: "text-yellow-500", text: "IoT (Internet of Things)", hoverText: "Create an IoT waste segregation system for public areas, ensuring efficient sorting and disposal to minimize health hazards. (SDG 11)" },
+ { icon: BsShieldLockFill, color: "text-blue-500", text: "Cyber Security", hoverText: "Develop an automated incident response platform for transportation systems to handle cyber threats swiftly with real-time alerts and countermeasures. (SDG 9)" },
   // { icon: FaLaptop, color: "text-orange-500", text: "Web Development", hoverText: "Create a web app to monitor Ganga River health, collecting real-time data on water quality, pollution, and biodiversity to support restoration efforts and promoting sustainable practices. (SDG 14)" }
 ];
+
+const sdg2 = [
+  { icon: IoHardwareChip, color: "text-yellow-500", text: "IoT (Internet of Things)", hoverText: "Create an IoT waste segregation system for public areas, ensuring efficient sorting and disposal to minimize health hazards. (SDG 11)" },
+]
 
 const agri = [
   { icon: LuBrainCircuit, color: "text-red-500", text: "AI Solutions", hoverText: "Develop a platform for real-time crop analysis, allowing farmers to upload images for instant identification of crop types, weeds, diseases, pests, and nutrient deficiencies. The goal is to streamline decision-making and resource management, enhancing agricultural efficiency." },
@@ -226,6 +229,38 @@ const Tracks = () => {
                     </div>
                   ) : (
                     <div className="flex flex-col items-center justify-center transition-opacity duration-300 ease-in-out" style={{ opacity: hoveredIndex === index + 3 ? 0 : 1 }}>
+                      <Icon className={`h-12 w-12 ${color}`} />
+                      <p className="mt-2 text-center text-sm">{text}</p>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+            
+            <div className="flex justify-center mt-8">
+              {sdg2.slice(0, 5).map(({ icon: Icon, color, text, hoverText }, index) => (
+                <div
+                  key={index + 4}
+                  onMouseEnter={() => handleMouseEnter(index + 4)}
+                  onMouseLeave={handleMouseLeave}
+                  className={`relative transition-all duration-300 ease-in-out flex items-center justify-center h-40 w-[25rem] border border-n-1/10 rounded-lg p-4 transform ${hoveredIndex === index + 4 ? 'scale-105 glowing-border' : ''}`}
+                  style={{
+                    background: `linear-gradient(to right, #202075, #131342)`,
+                    transition: 'background-color 0.3s ease, transform 0.3s ease',
+                  }}
+                >
+                  {hoveredIndex === index + 4 ? (
+                    <div
+                      className="absolute inset-0 flex items-center justify-center bg-white p-4 rounded shadow-lg text-white transition-opacity duration-300 ease-in-out opacity-100"
+                      style={{
+                        background: `linear-gradient(to right, #202075, #131342)`,
+                        transition: 'background-color 0.3s ease',
+                      }}
+                    >
+                      {hoverText}
+                    </div>
+                  ) : (
+                    <div className="flex flex-col items-center justify-center transition-opacity duration-300 ease-in-out" style={{ opacity: hoveredIndex === index + 4 ? 0 : 1 }}>
                       <Icon className={`h-12 w-12 ${color}`} />
                       <p className="mt-2 text-center text-sm">{text}</p>
                     </div>
