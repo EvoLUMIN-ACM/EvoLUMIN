@@ -21,11 +21,11 @@ const health = [
 ];
 
 const sdg = [
-  { icon: LuBrainCircuit, color: "text-red-500", text: "AI Solutions", hoverText: "Create an AI-powered software tool that aggregates real-time energy data from smart meters, analyzing consumption patterns to provide actionable insights for households and businesses, aiming to reduce energy use and enhance efficiency. (SDG 7)" },
+  { icon: FaMobileAlt, color: "text-purple-500", text: "App Development", hoverText: "Create a mobile app for rural and special-needs students with personalized learning plans to improve academic performance. (SDG 4)" },
+  { icon: IoGameController, color: "text-green-500", text: "Gamification", hoverText: "Design a gamified platform that simulates real-world industrial scenarios to effectively train and develop skills for the workforce in industrial settings. (SDG 9)" },
+  { icon: LuBrainCircuit, color: "text-red-500", text: "AI Solutions", hoverText: "Create an AI tool that leverages smart meter data to optimize energy use for homes and businesses, promoting efficiency and sustainability. (SDG 7)" },
   // { icon: BsShieldLockFill, color: "text-blue-500", text: "Cyber Security", hoverText: "Develop comprehensive cybersecurity solutions tailored for smart cities, focusing on safeguarding critical infrastructure against cyber threats to ensure urban resilience and safety. (SDG 11)" },
-  { icon: IoGameController, color: "text-green-500", text: "Gamification", hoverText: "Develop an interactive software platform that uses game technologies to simulate real-world industrial scenarios, enhancing skill development and training effectiveness for the industrial workforce. (SDG 9)" },
-  { icon: IoHardwareChip, color: "text-yellow-500", text: "IoT (Internet of Things)", hoverText: "Design an IoT waste segregation management system for the real-time monitoring and reporting to prevent health hazards from overflowing trash bins in public areas. (SDG 11)" },
-  { icon: FaMobileAlt, color: "text-purple-500", text: "App Development", hoverText: "Develop a mobile app analyzing educational records for rural and specially-abled students, offering personalized learning plans and resources to enhance academic performance and ensure equitable education access. (SDG 4)" },
+  { icon: IoHardwareChip, color: "text-yellow-500", text: "IoT (Internet of Things)", hoverText: "Create an IoT waste segregation system for public areas, ensuring efficient sorting and disposal to minimize health hazards. (SDG 11)" },
   // { icon: FaLaptop, color: "text-orange-500", text: "Web Development", hoverText: "Create a web app to monitor Ganga River health, collecting real-time data on water quality, pollution, and biodiversity to support restoration efforts and promoting sustainable practices. (SDG 14)" }
 ];
 
