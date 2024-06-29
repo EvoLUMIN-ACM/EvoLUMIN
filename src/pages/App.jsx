@@ -24,7 +24,7 @@ const App = () => {
         <Pricing />
         <Tracks />
         {/* <Sdg /> */}
-        <Sponsors/>
+        {/* <Sponsors/> */}
         {/* <Roadmap /> */}
         <Faq/>
         <Footer />
