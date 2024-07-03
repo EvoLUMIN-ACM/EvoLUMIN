@@ -35,7 +35,7 @@ const rulesData = [
     title: 'Idea Submission',
     content: (
       <ul className="list-none list-inside">
-        <li className="flex items-start"><FaCheckCircle className="mr-2 text-blue-500" /> Ideation phase closes on 20th July 2024 (Saturday) at 11:59pm (IST).</li>
+        <li className="flex items-start"><FaCheckCircle className="mr-2 text-blue-500" /> Ideation phase closes on 20th July 2024 (Saturday) at 00:00am (IST).</li>
         <li className="flex items-start"><FaCheckCircle className="mr-2 text-blue-500" /> Each team can submit only one idea, which can be edited until the ideation phase closes.</li>
         <li className="flex items-start"><FaCheckCircle className="mr-2 text-blue-500" /> If multiple track submissions are made, only the most recent one will be evaluated.</li>
         <li className="flex items-start"><FaCheckCircle className="mr-2 text-blue-500" /> Participants are allowed to utilize a combination of domains to implement their solution.</li>
@@ -64,7 +64,7 @@ const rulesData = [
     content: (
       <ul className="list-none list-inside">
         <li className="flex items-start"><FaCheckCircle className="mr-2 text-blue-500" /> Registration Deadline: 17th July 2024</li>
-        <li className="flex items-start"><FaCheckCircle className="mr-2 text-blue-500" /> Ideation Phase Deadline: 20th July 2024</li>
+        <li className="flex items-start"><FaCheckCircle className="mr-2 text-blue-500" /> Ideation Phase Deadline: 20th July 2024 00:00am</li>
       </ul>
     ),
   },
