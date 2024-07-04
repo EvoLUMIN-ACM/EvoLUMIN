@@ -74,6 +74,11 @@ export const navigation = [
     title: "Faq",
     url: "/#faq",
   },
+  {
+    id:"6",
+    title:"Template",
+    url:"https://docs.google.com/presentation/d/1ncZx_vVkLy6L7Ko3uHz9NRCbAAK_CaA0/edit?usp=sharing&ouid=107223231990873502845&rtpof=true&sd=true"
+  }
 ];
 
 export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
