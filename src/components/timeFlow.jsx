@@ -56,7 +56,7 @@ const Timeflow = () => {
             <div className="absolute h-4 w-4 bg-timeline-round top-7 transform rotate-45 -left-1 z-[-1]"></div>
             <div className="flex items-center justify-between">
               <span className="text-lg font-semibold">Results Publication</span>
-              <span>To Be  Decided</span>
+              <span>To Be Decided</span>
             </div>
             {/* <p className="mt-2 mb-4 text-sm">Hackathon coding period will start from 10:30 AM onwards.</p> */}
           </section>
