@@ -20,19 +20,19 @@ const About = () => {
         />
 
         <div className="relative">
-          <div className="relative z-1 flex items-center h-[39rem] mb-5 p-8 border border-n-1/10 rounded-3xl overflow-hidden lg:p-20 xl:h-[40rem] mt-[-3rem]">
-            <div className="absolute top-0 left-0 w-full h-full pointer-events-none md:w-4/5 xl:w-auto">
-              <img
-                className="w-[40rem] h-full object-cover md:object-right"
-                width={1000}
-                alt="EvoLUMIN"
-                height={1000}
-                src={evolumin}
-              />
-            </div>
+          <div className="relative z-1 flex items-center h-[39rem] mb-7 mt-10 p-8 border border-n-1/10 rounded-3xl overflow-hidden lg:p-20 xl:h-[40rem] mt-[-3rem]">
+          <div className="hidden xl:block absolute top-0 left-0 w-full h-full pointer-events-none">
+        <img
+          className="w-[40rem] h-full object-cover md:object-right"
+          width={1000}
+          height={1000}
+          alt="EvoLUMIN"
+          src={evolumin}
+        />
+      </div>
 
-            <div className="relative z-1 max-w-[35rem] ml-auto">
-              <h4 className="h4 mb-4">EvoLUMIN</h4>
+            <div className="relative z-1 max-w-[38rem] ml-auto mt-10 mb-7 ">
+              <h4 className="h4 lg:mb-1 mt-16 lg:mt-8">EvoLUMIN</h4>
               <p className="body-2 mb-[3rem] text-n-3">
                 EvoLumin is a national-level tech hackathon thats being conducted by the ACM Student Chapter, 
                 Amritapuri. We call upon the brightest minds to converge and create impactful solutions. We 
@@ -40,20 +40,22 @@ const About = () => {
                 tackle real-world challenges. Participants will unleash their potential, embrace
                 collaboration, and spark social impact through innovative problem-solving.
               </p>
-              <ul className="body-2">
+              <ul className="body-2 ">
                 <h6 className="h6 mb-[1rem] text-n-3">
                   Event Highlights
                 </h6>
                 {brainwaveServices.map((item, index) => (
                   <li
                     key={index}
-                    className="flex items-start py-4 border-t border-n-6"
+                    className="flex items-start py-4 border-t border-n-6 "
+                    
                   >
                     <img width={24} height={24} src={check} />
                     <p className="ml-4">{item}</p>
                   </li>
                 ))}
               </ul>
+              <div className="mb-16"></div>
             </div>
           </div>
 
