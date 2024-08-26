@@ -24,7 +24,7 @@ const rulesData = [
     title: 'Registration Details',
     content: (
       <ul className="list-none list-inside">
-        <li className="flex items-start"><FaCheckCircle className="mr-2 text-blue-500" /> Registration closes on 17th July 2024 (Thursday).</li>
+        <li className="flex items-start"><FaCheckCircle className="mr-2 text-blue-500" /> Registration closes on 31 st August.</li>
         <li className="flex items-start"><FaCheckCircle className="mr-2 text-blue-500" /> Registration must be done through Devfolio.</li>
         <li className="flex items-start"><FaCheckCircle className="mr-2 text-blue-500" /> Ensure that all registration details, including spelling and credentials, are accurate.</li>
         <li className="flex items-start"><FaCheckCircle className="mr-2 text-blue-500" /> Ensure that you provide a valid email and phone number for contact.</li>
@@ -35,7 +35,7 @@ const rulesData = [
     title: 'Idea Submission',
     content: (
       <ul className="list-none list-inside">
-        <li className="flex items-start"><FaCheckCircle className="mr-2 text-blue-500" /> Ideation phase closes on 20th July 2024 (Saturday) at 00:00am (IST).</li>
+        <li className="flex items-start"><FaCheckCircle className="mr-2 text-blue-500" /> Ideation phase closes on 4 th September at 00:00am (IST).</li>
         <li className="flex items-start"><FaCheckCircle className="mr-2 text-blue-500" /> Each team can submit only one idea, which can be edited until the ideation phase closes.</li>
         <li className="flex items-start"><FaCheckCircle className="mr-2 text-blue-500" /> If multiple track submissions are made, only the most recent one will be evaluated.</li>
         <li className="flex items-start"><FaCheckCircle className="mr-2 text-blue-500" /> Participants are allowed to utilize a combination of domains to implement their solution.</li>
@@ -63,8 +63,8 @@ const rulesData = [
     title: 'Important Dates',
     content: (
       <ul className="list-none list-inside">
-        <li className="flex items-start"><FaCheckCircle className="mr-2 text-blue-500" /> Registration Deadline: 17th July 2024</li>
-        <li className="flex items-start"><FaCheckCircle className="mr-2 text-blue-500" /> Ideation Phase Deadline: 20th July 2024 00:00am</li>
+        <li className="flex items-start"><FaCheckCircle className="mr-2 text-blue-500" /> Registration Deadline: 31st August 2024</li>
+        <li className="flex items-start"><FaCheckCircle className="mr-2 text-blue-500" /> Ideation Phase Deadline: 4 th September 2024 00:00am</li>
       </ul>
     ),
   },
