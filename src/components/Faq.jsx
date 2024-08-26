@@ -35,7 +35,7 @@ const Faq = () => {
             <div>
               <h3 className="text-timeline-round text-lg font-semibold">How can I apply?</h3>
               <br/>
-              <p className="text-gray-600">The registration can be done by clicking the register button <a href="#" className="text-blue-500 underline">here</a> or through Devfolio. Registrations end on 17<sup>th</sup> July 2024.</p>
+              <p className="text-gray-600">The registration can be done by clicking the register button <a href="#" className="text-blue-500 underline">here</a> or through Devfolio. Registrations end on 31<sup>st</sup> August 2024.</p>
             </div>
           </div>
           <div className="single-intro-text bg-white rounded-lg shadow-md p-6 flex items-center">
