@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { useLocation } from "react-router-dom";
+import { Link, Navigate, useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import evolumin from "../assets/evolumin.png";
 import evolumin1 from "../assets/evolumin1.jpg";
@@ -8,6 +8,7 @@ import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
 import { HamburgerMenu } from "./design/Header";
 import { useState } from "react";
+import Test from "../pages/test";
 
 const Header = () => {
   const pathname = useLocation();
@@ -48,6 +49,11 @@ const Header = () => {
           } fixed top-[5rem] left-0 right-0 bottom-0 bg-n-8 lg:static lg:flex lg:mx-auto lg:bg-transparent`}
         >
           <div className="relative z-2 flex flex-col items-center justify-center m-auto lg:flex-row">
+            <a>
+              <Link to="/test" className="block relative font-code text-2xl uppercase text-n-1 transition-colors hover:text-color-1 px-6 py-6 md:py-8 lg:-mr-0.25 lg:text-xs lg:font-semibold lg:text-n-1/50 lg:leading-5 lg:hover:text-n-1 xl:px-12">
+                Test 
+                </Link>
+            </a>
             {navigation.map((item) => (
               <a
                 key={item.id}
@@ -63,6 +69,7 @@ const Header = () => {
               >
                 {item.title}
               </a>
+              
             ))}
           </div>
 
