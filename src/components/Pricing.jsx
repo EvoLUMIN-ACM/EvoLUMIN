@@ -11,7 +11,7 @@ const Pricing = () => {
     <Section className="overflow-hidden relative pt-0 lg:pt-0 xl:pt-0 pb-0 lg:pb-0 xl:pb-0" id="pricing">
       <div className="container relative z-2">
         <br /><br /><br /><br />
-        <Heading className="lg:mb-7" fontWeight="font-bold" title="Prize Pool💸" />
+        <Heading className="lg:mb-7" fontWeight="font-bold" title="Prize Pool💸 *" />
 
         <div className="relative">
           <PricingListsenior />

@@ -92,7 +92,7 @@ const Timeflow = () => {
             <div className="absolute h-4 w-4 bg-timeline-round top-7 transform rotate-45 -right-1 z-[-1]"></div>
             <div className="flex items-center justify-between">
               <span className="text-lg font-semibold">Grand Finale</span>
-              <span>To be announced</span>
+              <span>26 th and 27 th of October</span>
             </div>
             <p className="mt-2 mb-4 text-sm">Top participants are invited to Amrita Vishwa Vidyapeetham to participate in the final round.</p>
           </section>

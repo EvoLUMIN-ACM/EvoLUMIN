@@ -224,21 +224,21 @@ export const seniorSecondaryPricing = [
   { 
     id: '2', 
     title: 'Second Place🥈', 
-    description: 'Senior Secondary Students', 
+    description: 'Cancelled due to no applications', 
     price: '30k', 
     medal: '🥈' // Silver Medal Emoji 
   },
   { 
     id: '1', 
     title: 'First Place 🥇', 
-    description: 'Senior Secondary Students', 
+    description: 'Cancelled due to no applications', 
     price: '50k', 
     medal: '🥇' // Gold Medal Emoji 
   },
   { 
     id: '3', 
     title: '  Third Place 🥉', 
-    description: 'Senior Secondary Students', 
+    description: 'Cancelled due to no applications', 
     price: '20k', 
     medal: '🥉' // Bronze Medal Emoji 
   },
@@ -248,20 +248,17 @@ export const seniorSecondaryPricing = [
 export const pricing = [
   {
     id: "0",
-    title: "Agriculture 👨‍🌾",
-    description: "🎓 College Students 🎓",
+    title: "Agriculture 👨‍🌾 *",
     price: "1.5Lakh",
   },
   {
     id: "1",
-    title: "Sustainable Development Goals 🏞️",
-    description: "🎓 College Students 🎓",
+    title: "Sustainable Development Goals 🏞️ *",
     price: "1.5Lakh",
   },
   {
     id: "2",
     title: "Health Care 🧬",
-    description: "🎓 College Students 🎓",
     price: "1.5Lakh",
   },
 ];
